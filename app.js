@@ -4,8 +4,11 @@ const app = express();
 
 
 app.get("/",(req,res)=>{
-    res.send("Pagina principal  TEste")
+    res.send("Esta e a pagina principal")
 });
+app.get("/admin",(req,res)=>{
+    res.send("<h1>PAgina principal do admistrador</h1>")
+})
 
 const PORT = process.env.PORT || 7000;
 app.listen(PORT,()=>{
